@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  service_1:
+    container_name: service_1
+    image: derand96/service_1_image
+    build: ./service_1
+    deploy:
+      replicas: 3
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+    environment:
+      DATABASE_URI: ${DATABASE_URI}
+    deploy:
+      replicas: 3
+  service_2:
+    image: derand96/service_2_image
+    container_name: service2-backend
+    build: ./service_2
+    deploy:
+      replicas: 3
+  service_3:
+    image: derand96/service_3_image
+    container_name: service3-backend
+    build: ./service_3
+    deploy:
+      replicas: 3
+  service_4:
+    image: derand96/service_4_image
+    container_name: service_4
+    build: ./service_4
+    deploy:
+      replicas: 3
