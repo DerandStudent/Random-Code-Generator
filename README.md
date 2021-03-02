@@ -16,6 +16,7 @@ Trello was used to create an initial list plan of what I had to do. More tasks a
 
 I have uploaded an image of the Trello board when I had started the project:
 
+![quiz app wireframe](https://user-images.githubusercontent.com/55449689/107543761-70c8cc80-6bc1-11eb-9885-e79398e81961.jpeg)
 <#trello board>
 
 ### Architecture
