@@ -1,6 +1,6 @@
 from typing import Text
 from flask import Flask, url_for, redirect, request
-from application import app
+from application import app, db
 import requests
 import random
 
@@ -40,4 +40,10 @@ def index():
     if s == "F":
         sub_code = "Unlucky: No Prize"
 
+    #add to database
+    code_db = Codes(code = random_code.text)
+    #add
+    db.session.add(code_db)
+    db.session.commit()
+    
     return render_template('index.html', random_code=random_code, sub_code=sub_code)
