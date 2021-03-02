@@ -16,24 +16,27 @@ Trello was used to create an initial list plan of what I had to do. More tasks a
 
 I have uploaded an image of the Trello board when I had started the project:
 
-![quiz app wireframe](https://user-images.githubusercontent.com/55449689/107543761-70c8cc80-6bc1-11eb-9885-e79398e81961.jpeg)
-<#trello board>
+
+![#trello_board](https://user-images.githubusercontent.com/55449689/109620971-6485be80-7b32-11eb-96f9-9d1adbde115a.png)
+
 
 ### Architecture
 
 Below is the architecture of what my services will send:
 
-<#architecture_1>
+![#arch1](https://user-images.githubusercontent.com/55449689/109622613-34d7b600-7b34-11eb-9a4b-9e2c7cb26872.png)
+
 
 Below is the architecture of how my services will work with requests and queries:
 
-<#architecture_2>
+![#arch2](https://user-images.githubusercontent.com/55449689/109622620-373a1000-7b34-11eb-8fa8-af8e3db355c2.png)
 
 ## Services
 
 ### Database
 
-<#database diagram>
+![#erd](https://user-images.githubusercontent.com/55449689/109621814-597f5e00-7b33-11eb-8bd1-98bba595e4da.png)
+664f8200-7b32-11eb-875c-45953004d416.png)
 
 ### Service 1
 
@@ -47,15 +50,15 @@ Below are examples of the front end that is displayed with the generated values:
 
 Example 1:
 
-<#index_won>
+![#index_win](https://user-images.githubusercontent.com/55449689/109620961-60f23780-7b32-11eb-8ccc-3538973d3846.png)
 
 Example 2:
 
-<#index_lose>
+![#index_lose](https://user-images.githubusercontent.com/55449689/109620958-5e8fdd80-7b32-11eb-9508-f775394d0001.png)
 
 Service one has also been tested and the test coverage is shown below:
 
-<#test_cov>
+![#service_1_code-cov](https://user-images.githubusercontent.com/55449689/109620966-63549180-7b32-11eb-8ab8-24fdffaa15ea.png)
 
 ### Services 2, 3 and 4
 
@@ -79,12 +82,11 @@ def code_part_example():
 ## CI/CD pipeline
 
 Below is the CI/CD pipeline that I am using:
-
-<#pipeline>
+![#CI](https://user-images.githubusercontent.com/55449689/109624087-b54ae680-7b35-11eb-9ebb-d4ceb967f66b.png)
 
 ## Conclusion
 
-<#trello board 2>
+![#trello_board_2](https://user-images.githubusercontent.com/55449689/109620979-664f8200-7b32-11eb-875c-45953004d416.png)
 
 As you can see by the trello board I ran out of time to complete the project.
 
