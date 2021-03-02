@@ -1,0 +1,39 @@
+---
+- name: "Install package list"
+  apt:
+    pkg:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - software-properties=common
+    - python3
+    - python3-pip
+    - python-setuptools
+    state: latest
+    update_caache: true
+-name: "Get Docker API key"
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+-name: "Add ATP Repo"
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+    state: present
+-name: "Install docker cd"
+  apt:
+    name: docker-ce
+    state: latest
+    update_cache: true
+-name: "auto start Docker"
+    service:
+    name: docker
+    state: started
+-name: "Install docker pip package"
+  pip:
+    name: docker:
+    executable: pip3
+-name: "adding user to docker group"
+  user:
+    name: username
+    groups: docker
+    expend: yes

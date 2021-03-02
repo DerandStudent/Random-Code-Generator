@@ -1,0 +1,22 @@
+---
+- name: 'install packages'
+  apt:
+    pkg:
+    - nginx
+    - git
+    state: latest
+    update_cache: true
+- name: 'check nginx state started'
+  service:
+    name: nginx
+    state: started
+- name: 'push nginx to instance'
+  template:
+    src: nginx.conf
+    dest: /nginx/nginx.conf
+  register: nginx_config
+- name: 'restart nginx'
+  service:
+    name: nginx
+    state: reloaded
+  when: nginx_config.changed

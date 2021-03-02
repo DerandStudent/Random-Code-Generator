@@ -1,0 +1,6 @@
+---
+######unfinished################
+#RAN OUT OF TIME IT'S 6AM IN THE MORNING
+- name: 'add worker'
+  docker_swarm:
+    state: join

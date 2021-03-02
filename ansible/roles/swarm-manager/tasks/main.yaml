@@ -1,0 +1,11 @@
+---
+- name: 'add user to jenkins'
+  user:
+    name: jenkins
+    groups: docker
+    shell: /bin/bash
+    append: true
+
+- name: 'start swarm'
+  docker_swarm:
+    state: present
